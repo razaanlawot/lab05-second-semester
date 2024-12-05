@@ -1,0 +1,242 @@
+\/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #002b5c;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0 20px;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header .logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+/* Content Section */
+.content {
+  background-color: #002b5c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.content .gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.content .gallery img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  }
+  
+
+  .video {
+    background-color: #002b5c;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #002b5c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+
+/* Contact Section */
+.contact {
+    background-color: #18a999;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact .svg-button {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #18a999;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact .svg-button:hover {
+    background-color: #16a087;
+    color: white;
+  }
+  
+  .contact .form-container {
+    background-color: #002b5c;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contact .contact-logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .contact .contact-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .contact form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact form button {
+    padding: 10px 20px;
+    background: white;
+    color: #002b5c;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background-color: #004080;
+    color: white;
+  }
+  
+/* Footer */
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+} 
